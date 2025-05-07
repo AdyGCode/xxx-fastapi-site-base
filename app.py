@@ -13,6 +13,7 @@ print(BASE_PATH)
 app.mount("/static",
           StaticFiles(directory="static"),
           name="static")
+
 app.mount("/css",
           StaticFiles(directory="static/css"),
           name="css")
@@ -39,3 +40,8 @@ async def about(request: Request):
         request=request,
         name="pages/about.html"
     )
+
+@app.get("/api/data")
+async def api_data(request: Request):
+    return { 'name':'Frank Spencer' }
+
