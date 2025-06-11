@@ -43,20 +43,21 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-
 * npm
   ```sh
   npm install npm@latest -g
   ```
 
-### Installation
+
+
+### Installation (via release)
 
 1. Go to the following repository: https://github.com/AdyGCode/xxx-fastapi-base-code
 2. Find the Releases entry on the right side of the page:
 
 ![img.png](static/img/img.png)
 
-3. Click on the title of the latest release (eg. Version 1: Starter Code)
+3. Click on the title of the latest release (e.g. Version 1: Starter Code)
 4. In the Assets area, locate the Source Code Zip file. Click to Download Source Code (zip)
 
 ![img_1.png](static/img/img_1.png)
@@ -102,8 +103,39 @@ pip install --upgrade PACKAGE_NAME PACKAGE_NAME_2 ...
 Replacing the PACKAGE_NAME with the name of the packages that have been installed.
 
 
+15. Install the Node modules for TailwindCSS:
+```shell
+npm install
+```
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## Developing with the Code
+
+You will need two CLI instances to run and develop with this code.
+
+> **Ensure you are in the correct folder before executing these commands.**
+
+In instance 1, execute:
+
+```shell
+npm run dev
+```
+
+This will execute the Tailwind compiler to monitor and update the CSS file as required.
+
+In instance 2, execute:
+
+```shell
+fastapi dev src/base_code.py
+```
+
+This will run the application in development mode with feedback via the command line, plus debugging and other features.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
